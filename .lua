@@ -23,61 +23,61 @@ getgenv().GAG2Config = {
 
     -- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Maple Carrot"] = 4,
-        ["Maple Strawberry"] = 4,
-        ["Maple Blueberry"] = 4,
-        ["Maple Tulip"] = 4,
-        ["Maple Tomato"] = 4,
-        ["Maple Apple"] = 4,
-        ["Maple Bamboo"] = 100,
-        ["Maple Corn"] = 4,
-        ["Maple Cactus"] = 4,
-        ["Maple Pineapple"] = 4,
-        ["Maple Mushroom"] = 200,
-        ["Maple Green Bean"] = 4,
-        ["Maple Banana"] = 10,
-        ["Maple Grape"] = 10,
-        ["Maple Coconut"] = 10,
-        ["Maple Mango"] = 10,
-        ["Maple Dragon Fruit"] = 10,
-        ["Maple Acorn"] = 10,
-        ["Maple Cherry"] = 10,
-        ["Maple Sunflower"] = 10,
-        ["Atlantic Giant Pumpkin"] = 10,
-        ["Maple Venus Fly Trap"] = 10,
-        ["Maple Pomegranate"] = 10,
-        ["Maple Poison Apple"] = 10,
-        ["Maple Venom Spitter"] = 10,
+        ["Maple Carrot"] = 0,
+        ["Maple Strawberry"] = 0,
+        ["Maple Blueberry"] = 0,
+        ["Maple Tulip"] = 0,
+        ["Maple Tomato"] = 0,
+        ["Maple Apple"] = 0,
+        ["Maple Bamboo"] = 9999,
+        ["Maple Corn"] = 0,
+        ["Maple Cactus"] = 0,
+        ["Maple Pineapple"] = 0,
+        ["Maple Mushroom"] = 0,
+        ["Maple Green Bean"] = 0,
+        ["Maple Banana"] = 0,
+        ["Maple Grape"] = 0,
+        ["Maple Coconut"] = 0,
+        ["Maple Mango"] = 0,
+        ["Maple Dragon Fruit"] = 0,
+        ["Maple Acorn"] = 0,
+        ["Maple Cherry"] = 0,
+        ["Maple Sunflower"] = 0,
+        ["Atlantic Giant Pumpkin"] = 0,
+        ["Maple Venus Fly Trap"] = 0,
+        ["Maple Pomegranate"] = 0,
+        ["Maple Poison Apple"] = 0,
+        ["Maple Venom Spitter"] = 0,
     },
 
     -- Buy Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Maple Carrot"] = 5,
-        ["Maple Strawberry"] = 5,
-        ["Maple Blueberry"] = 5,
-        ["Maple Tulip"] = 5,
-        ["Maple Tomato"] = 5,
-        ["Maple Apple"] = 5,
-        ["Maple Bamboo"] = 9999,
-        ["Maple Corn"] = 1,
-        ["Maple Cactus"] = 2,
-        ["Maple Pineapple"] = 3,
-        ["Maple Mushroom"] = 9999,
-        ["Maple Green Bean"] = 2,
-        ["Maple Banana"] = 1,
-        ["Maple Grape"] = 1,
-        ["Maple Coconut"] = 1,
-        ["Maple Mango"] = 1,
-        ["Maple Dragon Fruit"] = 1,
-        ["Maple Acorn"] = 3,
-        ["Maple Cherry"] = 1,
-        ["Maple Sunflower"] = 1,
-        ["Atlantic Giant Pumpkin"] = 1,
-        ["Maple Venus Fly Trap"] = 1,
-        ["Maple Pomegranate"] = 1,
-        ["Maple Poison Apple"] = 1,
-        ["Maple Venom Spitter"] = 1,
-        ["Conifer Cone"] = 1,
+        ["Maple Carrot"] = 0,
+        ["Maple Strawberry"] = 0,
+        ["Maple Blueberry"] = 0,
+        ["Maple Tulip"] = 0,
+        ["Maple Tomato"] = 0,
+        ["Maple Apple"] = 0,
+        ["Maple Bamboo"] = 99999,
+        ["Maple Corn"] = 0,
+        ["Maple Cactus"] = 0,
+        ["Maple Pineapple"] = 0,
+        ["Maple Mushroom"] = 99999,
+        ["Maple Green Bean"] = 0,
+        ["Maple Banana"] = 0,
+        ["Maple Grape"] = 0,
+        ["Maple Coconut"] = 0,
+        ["Maple Mango"] = 0,
+        ["Maple Dragon Fruit"] = 0,
+        ["Maple Acorn"] = 0,
+        ["Maple Cherry"] = 0,
+        ["Maple Sunflower"] = 0,
+        ["Atlantic Giant Pumpkin"] = 9999,
+        ["Maple Venus Fly Trap"] = 9999,
+        ["Maple Pomegranate"] = 9999,
+        ["Maple Poison Apple"] = 99999,
+        ["Maple Venom Spitter"] = 9999,
+        ["Conifer Cone"] = 99999,
         ["Amber Cranberry"] = 9999,
     },
 
@@ -99,7 +99,7 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 20,  -- Seconds
 
     -- Consumable Config
-    USE_SPRINKLER = {},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
+    USE_SPRINKLER = {"Syrup Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
     USE_WATERING_CAN = {},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
@@ -115,7 +115,21 @@ getgenv().GAG2Config = {
     EXPAND_PLOT = 1,  -- 0 = Do Not Expand, 3 = Expand Plot 3 Times
 
     -- Auto Mail Config
-    AUTO_MAIL = {},  -- ["Username"] = {["Item Name"] = Amount}
+    AUTO_MAIL = { -- ["Username"] = {["Item Name"] = Amount}
+
+           ["kimminji411"] = {
+                -- seeds
+            
+        ["Maple Mushroom"] = 199,
+        ["Atlantic Giant Pumpkin"] = 3,
+        ["Maple Venus Fly Trap"] = 1,
+        ["Maple Pomegranate"] = 3,
+        ["Maple Poison Apple"] = 1,
+        ["Maple Venom Spitter"] = 1,
+        ["Conifer Cone"] = 1,
+        ["Amber Cranberry"] = 1,
+               
+
     AUTO_MAIL_DELAY = 60,  -- Seconds
     COLLECT_MAIL = true,
 
