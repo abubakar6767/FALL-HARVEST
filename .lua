@@ -128,6 +128,7 @@ getgenv().GAG2Config = {
         ["Maple Venom Spitter"] = 1,
         ["Conifer Cone"] = 1,
         ["Amber Cranberry"] = 1,
+    },
                
 
     AUTO_MAIL_DELAY = 60,  -- Seconds
