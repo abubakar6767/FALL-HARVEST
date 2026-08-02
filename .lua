@@ -90,6 +90,7 @@ getgenv().GAG2Config = {
         ["Super Syrup Sprinkler"] = 9999,
         ["Super Magic Mail"] = 9999,
         ["Rare Magic Mail"] = 9999,
+        ["Syrup Watering Can"] = 9999,
     },
 
     -- Sell Config
@@ -100,8 +101,8 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 20,  -- Seconds
 
     -- Consumable Config
-    USE_SPRINKLER = {},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
-    USE_WATERING_CAN = {},  -- "Watering Can Name"
+    USE_SPRINKLER = {"Syrup Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
+    USE_WATERING_CAN = {"Syrup Watering Can"},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
     -- Other Config
