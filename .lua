@@ -118,7 +118,6 @@ getgenv().GAG2Config = {
     AUTO_MAIL = { -- ["Username"] = {["Item Name"] = Amount}
 
     ["kimminji411"] = {
-    
         ["Maple Mushroom"] = 199,
         ["Atlantic Giant Pumpkin"] = 3,
         ["Maple Venus Fly Trap"] = 1,
@@ -128,7 +127,7 @@ getgenv().GAG2Config = {
         ["Conifer Cone"] = 1,
         ["Amber Cranberry"] = 1,
     },
-               
+},
 
     AUTO_MAIL_DELAY = 60,  -- Seconds
     COLLECT_MAIL = true,
