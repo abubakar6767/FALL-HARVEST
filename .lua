@@ -1,4 +1,4 @@
-script_key="AcANjHiAqTzdSnOZgMCtjafGwuAFylRe";
+script_key="NfhMUFsUCzremYNfsmuvVHtwYbCtVFwQ";
 getgenv().GAG2Config = {
     WORLD = "FallHarvest",
     FPS_CAP = 5,  -- MUST USE 5+ FPS
