@@ -118,7 +118,7 @@ getgenv().GAG2Config = {
     AUTO_MAIL = { -- ["Username"] = {["Item Name"] = Amount}
 
     ["kimminji411"] = {
-        ["Maple Mushroom"] = 30,
+        ["Maple Mushroom"] = 40,
         ["Atlantic Giant Pumpkin"] = 3,
         ["Maple Venus Fly Trap"] = 1,
         ["Maple Pomegranate"] = 3,
