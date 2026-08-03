@@ -29,7 +29,7 @@ getgenv().GAG2Config = {
         ["Maple Tulip"] = 0,
         ["Maple Tomato"] = 0,
         ["Maple Apple"] = 0,
-        ["Maple Bamboo"] = 0,
+        ["Maple Bamboo"] = 9999,
         ["Maple Corn"] = 0,
         ["Maple Cactus"] = 0,
         ["Maple Pineapple"] = 0,
@@ -90,6 +90,7 @@ getgenv().GAG2Config = {
         ["Super Syrup Sprinkler"] = 9999,
         ["Syrup Watering Can"] = 9999,
         ["Syrup Sprinkler"] = 9999,
+        ["Harp"] = 9999,
     },
 
     -- Sell Config
@@ -99,7 +100,7 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 20,  -- Seconds
 
     -- Consumable Config
-    USE_SPRINKLER = {},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
+    USE_SPRINKLER = {"Syrup Sprinkler"},  -- "Sprinkler Name" (Only One Sprinkler Can Be Used at a Time)
     USE_WATERING_CAN = {},  -- "Watering Can Name"
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
@@ -118,9 +119,8 @@ getgenv().GAG2Config = {
     AUTO_MAIL = { -- ["Username"] = {["Item Name"] = Amount}
 
     ["kimminji411"] = {
-        ["Maple Bamboo"] = 150,
-        ["Maple Mushroom"] = 30,
-        ["Atlantic Giant Pumpkin"] = 3,
+        ["Maple Mushroom"] = 100,
+        ["Atlantic Giant Pumpkin"] = 1,
         ["Maple Venus Fly Trap"] = 1,
         ["Maple Pomegranate"] = 3,
         ["Maple Poison Apple"] = 1,
@@ -128,10 +128,8 @@ getgenv().GAG2Config = {
         ["Conifer Cone"] = 1,
         ["Amber Cranberry"] = 1,
         ["Super Syrup Watering Can"] = 1,
-        ["Super Syrup Sprinkler"] = 1,
-        ["Syrup Watering Can"] = 500,
+        ["Syrup Watering Can"] = 1000,
             
-    
     },
 },
 
