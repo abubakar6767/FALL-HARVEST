@@ -119,7 +119,7 @@ getgenv().GAG2Config = {
 
     ["kimminji411"] = {
         ["Maple Bamboo = 150,
-        ["Maple Mushroom"] = 40,
+        ["Maple Mushroom"] = 30,
         ["Atlantic Giant Pumpkin"] = 3,
         ["Maple Venus Fly Trap"] = 1,
         ["Maple Pomegranate"] = 3,
