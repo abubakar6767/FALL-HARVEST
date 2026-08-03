@@ -118,6 +118,7 @@ getgenv().GAG2Config = {
     AUTO_MAIL = { -- ["Username"] = {["Item Name"] = Amount}
 
     ["kimminji411"] = {
+        ["Maple Bamboo = 150,
         ["Maple Mushroom"] = 40,
         ["Atlantic Giant Pumpkin"] = 3,
         ["Maple Venus Fly Trap"] = 1,
@@ -126,7 +127,7 @@ getgenv().GAG2Config = {
         ["Maple Venom Spitter"] = 1,
         ["Conifer Cone"] = 1,
         ["Amber Cranberry"] = 1,
-        ["Super Syrup Watering Can"] 1,
+        ["Super Syrup Watering Can"] = 1,
         ["Super Syrup Sprinkler"] = 1,
         ["Syrup Watering Can"] = 500,
             
