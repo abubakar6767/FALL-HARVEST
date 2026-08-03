@@ -1,0 +1,164 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+script_key = "xHncioIytinfhsAbEjtAbsNhaqoohDSE"; -- Enter your script key here
+
+getgenv().UserConfig = {
+	["Auto Double Or Nothing"] = false, -- Automatically enable Double Or Nothing feature
+    ["Double Or Nothing Target Wins"] = 1, -- Target wins when playing Double Or Nothing
+    ["FPS Cap"] = 5, -- Limit FPS to 5 for smooth AFK farming, saving maximum CPU/GPU
+    ["Auto Buy Seed"] = true, -- Automatically buy seeds based on the configuration list
+    ["Auto Plant Seed"] = true, -- Automatically plant seeds into the ground
+    ["Auction"] = {
+		["Min Sheckles"] = "10b", -- Minimum Sheckles required to participate in the auction                                    
+		["Common Egg"] = {["Max Price"] = "1b", ["Buy Before Expiry"] = 3}, -- Max price and expiry time to buy Common Egg  
+		["Dragon's Breath"] = {["Max Price"] = "5b"}, -- Max price to buy Dragon's Breath                
+		["Moon Bloom"] = {["Buy Before Expiry"] = 3}, -- Expiry time to buy Moon Bloom                
+		["Super Sprinkler"] = {["Max Price"] = "1b"}, -- Max price to buy Super Sprinkler               
+	},
+    ["Limit Plant Seed"] = {
+        -- Limit the number of each seed type allowed to be automatically planted on plots
+		-- Not in use, you can ignore this part
+        ["Maple Bamboo"] = 500, 
+		["Carrot"] = 100,
+            },
+    ["Limit Buy Seed"] = {
+        -- Limit the number of each seed type allowed to be automatically bought in the shop
+		-- Remove unnecessary seed lines if you want to save sheckles
+		--["Maple Carrot"] = 20,
+		--["Maple Strawberry"] = 20,
+		--["Maple Blueberry"] = 20,
+		--["Maple Tulip"] = 20,
+		--["Maple Tomato"] = 20,
+		--["Maple Apple"] = 20,
+		["Maple Bamboo"] = 2000000,
+		--["Maple Corn"] = 20,
+    --["Maple Cactus"] = 20,
+		--["Maple Pineapple"] = 20,
+		["Maple Mushroom"] = 2000000,
+		--["Maple Green Bean"] = 20,
+		["Maple Venus Fly Trap"] = 1000,
+	  ["Maple Pomegranate"] = 1000,
+		["Maple Poison Apple"] = 1000,
+    ["Maple Venom Spitter"] = 1000,
+		--["Maple Sunflower"] = 20,
+		--["Maple Cherry"] = 20,
+		--["Maple Acorn"] = 20,
+		--["Maple Dragon Fruit"] = 20,
+		--["Maple Mango"] = 20,
+		--["Maple Grape"] = 20,
+		--["Maple Banana"] = 20,
+		--["Maple Coconut"] = 20,
+		["Conifer Cone"] = 2000,
+		["Atlantic Giant Pumpkin"] = 10000,
+		["Amber Cranberry"] = 1000,
+    },
+	["Harvest Mutation Only"] = {}, -- List of items to harvest only when mutated
+    ["Favorite"] = {}, -- Favorite list
+    ["Buy Pets"] = {
+        -- Auto-buy pets configuration (Add `--` at the beginning to temporarily disable buying that pet)
+        
+        -- Uncommon
+        ["Dog"] = {Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Rare
+        ["Hedgehog"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Turkey"] = {Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Legendary
+        ["Squirrel"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Swan"] = {Normal =1, Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Mythic
+        ["Fox"] = 999,
+        ["Wolf"] = 999,
+
+        -- Super
+        ["Shadow Dragon"] = 999,
+    },
+	["Equip Pets"] = {
+		{"Swan", 6, 1} -- Automatically equip Swan pet
+			},
+	["Sell Pets"] = {
+        -- Auto-sell pets configuration (Add `--` at the beginning to temporarily disable)
+		-- ["Frog"] = {Normal = 6},
+		-- ["Bunny"] = {Normal = 6}
+	},
+    ["Expand Plot"] = true, -- Automatically buy plot expansions
+    ["Plot Expansions"] = 0, -- Target number of plot expansions to buy
+    ["Unlock Pet Slots"] = 0, -- Number of pet slots to unlock
+    ["Auto Collect Seed Packs"] = false, -- Automatically collect seed packs dropped on the ground
+    ["Merge Eclipse Bloom"] = true, -- Automatically merge Eclipse Bloom flowers
+    ["Gears"] = {
+        ["Buy Gear"] = {
+		--	["Trowel"] = 500,
+      ["Syrup Watering Can"] = 50000,
+		  ["Syrup Sprinkler"] = 5000,
+		  ["Harp"] = 1000, -- Buy Harp
+		--	["Bull Horn"] = 100, -- Buy Bull Horn
+		--	["Rare Magic Mail"] = 100,
+		--	["Legendary Magic Mail"] = 100,
+			["Super Syrup Sprinkler"] = 1000, -- Buy Super Syrup Sprinkler
+			["Super Syrup Watering Can"] = 1000, -- Buy Super Syrup Watering Can
+			["Super Magic Mail"] = 100,
+        },
+        ["Gears To Use"] = {
+           -- "Trowel", -- Use Trowel
+           --"Syrup Watering Can", -- Use regular Syrup Watering Can
+           -- "Syrup Sprinkler", -- Use regular Syrup Sprinkler
+                },
+    },
+	-- [ DISCORD NOTIFICATIONS - WEBHOOK ]
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516873518304722954/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- Discord Webhook URL to receive Pet notifications
+    ["Webhook Pet Name"] = {"Dog", "Hedgehog", "Turkey", "Squirrel", "Swan", "Fox", "Wolf", "Shadow Dragon"}, -- Names of pets to send notifications for
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"}, -- Rarities of pets to send notifications for
+	
+	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1521791543919378442/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- Discord Webhook URL to receive Seed notifications
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Maple Carrot", "Maple Pomegranate", "Maple Venus Fly Trap", "Maple Poison Apple", "Maple Venom Spitter", "Conifer Cone", "Atlantic Giant Pumpkin", "Amber Cranberry"}, -- Names of seeds to send notifications for
+	
+	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1521791670570582068/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- Discord Webhook URL to receive Gear notifications
+	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"}, -- Names of gears to send notifications for
+    ["Webhook Note"] = "Enter_Your_Name", -- Your custom name note on the webhook
+    ["Discord ID"] = "Enter_Your_Discord_ID", -- Your Discord ID to tag
+	
+	-- [ MAIL FEATURE ]
+["Mail To Username"] = {"kimminji411"},
+    ["Items To Mail"] = {
+        ["Pet"] = {
+			["Wolf"] = 1,
+      ["Fox"] = 1,
+        },
+        ["Seed"] = {
+            ["Maple Bamboo"] = {Amount = 0, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+            ["Maple Mushroom"] = {Amount = 14, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+            ["Amber Cranberry"] = {Amount = 1, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+            ["Conifer Cone"] = {Amount = 1, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+            ["Atlantic Giant Pumpkin"] = {Amount = 1, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+        },
+        ["Gear"] = {
+            ["Super Syrup Watering Can"] = {Amount = 1, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+            ["Super Syrup Sprinkler"] = {Amount = 1, To = {"RadiantxCog", "RadiantxCogo", "RadiantxCogw", "RadiantxCogr", "RadiantxCogy", "RadiantxCogi"}},
+        },
+    },
+    ["Claim Mail"] = true, -- Automatically claim incoming mail
+	
+	-- [ ADVANCED CONFIGURATION ]
+    ["Auto Plant"] = true, -- Enable automatic planting
+    ["Limit Auto Plant"] = 800, -- Maximum limit for automatic planting (800)
+    ["Blacklist Seed"] = {"Amber Cranberry"}, -- Blacklisted seeds list (Comma fixed at the end to prevent script errors)
+    ["Blacklist Shovel"] = {
+        -- List of plants forbidden from being shoveled by type/level
+	"Maple Venus Fly Trap", 
+	"Maple Pomegranate",
+	"Maple Poison Apple",
+	"Maple Venom Spitter",
+	"Conifer Cone",
+	"Atlantic Giant Pumpkin",
+	"Amber Cranberry"
+    },
+    ["Shovel Plant Once"] = { -- Shovel plant once configuration
+        
+    },
+    ["World"] = "Fall Harvest" -- Game world (Default: Fall Harvest)
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
