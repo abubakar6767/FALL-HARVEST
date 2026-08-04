@@ -12,8 +12,10 @@ getgenv().GAG2Config = {
         ["ShadowDragon"] = 99,
         ["Fox"] = 99,
         ["Wolf"] = 99,
-        ["Swan"] = 5,
-        ["Turkey"] = 5,
+        ["Big Fox"] = 999,
+        ["Big Wolf"] = 999,
+
+
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
@@ -23,7 +25,7 @@ getgenv().GAG2Config = {
 
     -- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Maple Carrot"] = 0,
+        ["Maple Carrot"] = 200,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
@@ -52,7 +54,7 @@ getgenv().GAG2Config = {
 
     -- Buy Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Maple Carrot"] = 0,
+        ["Maple Carrot"] = 200,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
@@ -118,8 +120,7 @@ getgenv().GAG2Config = {
     -- Auto Mail Config
     AUTO_MAIL = { -- ["Username"] = {["Item Name"] = Amount}
 
-    ["kimminji411"] = {
-        ["Maple Mushroom"] = 100,
+    ["RadiantxCogo"] = {
         ["Atlantic Giant Pumpkin"] = 1,
         ["Maple Venus Fly Trap"] = 1,
         ["Maple Pomegranate"] = 3,
@@ -127,13 +128,20 @@ getgenv().GAG2Config = {
         ["Maple Venom Spitter"] = 1,
         ["Conifer Cone"] = 1,
         ["Amber Cranberry"] = 1,
-        ["Super Syrup Watering Can"] = 1,
-        ["Syrup Watering Can"] = 1000,
             
+    },
+        
+    ["RadiantxCogw"] = {
+        ["Super Syrup Watering Can"] = 1,
+        ["Super Syrup Sprinkler"] = 1,
+    },
+
+    ["RadiantxCog"] = {
+        ["Maple Mushroom"] = 20,
     },
 },
 
-    AUTO_MAIL_DELAY = 60,  -- Seconds
+    AUTO_MAIL_DELAY = 10,  -- Seconds
     COLLECT_MAIL = true,
 
     -- Discord Config
