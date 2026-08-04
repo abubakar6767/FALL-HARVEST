@@ -54,7 +54,7 @@ getgenv().GAG2Config = {
 
     -- Buy Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Maple Carrot"] = 200,
+        ["Maple Carrot"] = 300,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
@@ -138,7 +138,15 @@ getgenv().GAG2Config = {
 
     ["RadiantxCog"] = {
         ["Maple Mushroom"] = 20,
+            
     },
+        
+    ["RadiantxCogr"] = {
+        ["Wolf"] = 2,
+        ["Fox"] = 2,
+        ["Shadow Dragon"] = 1,
+            
+     },
 },
 
     AUTO_MAIL_DELAY = 10,  -- Seconds
