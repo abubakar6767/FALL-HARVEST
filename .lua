@@ -25,13 +25,13 @@ getgenv().GAG2Config = {
 
     -- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Maple Carrot"] = 200,
+        ["Maple Carrot"] = 10,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
         ["Maple Tomato"] = 0,
         ["Maple Apple"] = 0,
-        ["Maple Bamboo"] = 9999,
+        ["Maple Bamboo"] = 10,
         ["Maple Corn"] = 0,
         ["Maple Cactus"] = 0,
         ["Maple Pineapple"] = 0,
