@@ -145,6 +145,7 @@ getgenv().GAG2Config = {
         ["Wolf"] = 2,
         ["Fox"] = 2,
         ["Shadow Dragon"] = 1,
+        ["Harp"] = 20,
             
      },
 },
