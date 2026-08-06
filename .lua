@@ -150,7 +150,7 @@ getgenv().GAG2Config = {
 
     },
         
-    ["RivetTest1"] = {
+    ["RivetTest01"] = {
         ["Maple Bamboo"] = 500,
         ["Maple Carrot"] = 500,
     
