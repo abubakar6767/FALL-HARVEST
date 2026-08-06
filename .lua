@@ -25,13 +25,13 @@ getgenv().GAG2Config = {
 
     -- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Maple Carrot"] = 10,
+        ["Maple Carrot"] = 0,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
         ["Maple Tomato"] = 0,
         ["Maple Apple"] = 0,
-        ["Maple Bamboo"] = 10,
+        ["Maple Bamboo"] = 0,
         ["Maple Corn"] = 0,
         ["Maple Cactus"] = 0,
         ["Maple Pineapple"] = 0,
@@ -54,7 +54,7 @@ getgenv().GAG2Config = {
 
     -- Buy Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Maple Carrot"] = 300,
+        ["Maple Carrot"] = 9999,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
@@ -86,7 +86,7 @@ getgenv().GAG2Config = {
     BUY_AUCTION = {},  -- ["Item Name"] = {Maximum Sheckle Price, Buy Until Amount}
     BUY_CRATE = {},  -- ["Crate Name"] = Buy Until Amount
 
-    BUY_GEAR_MIN_SHECKLE = 1000000,
+    BUY_GEAR_MIN_SHECKLE = 10000000,
     BUY_GEAR = {  -- ["Gear Name"] = Buy Until Amount
         ["Super Syrup Watering Can"] = 9999,
         ["Super Syrup Sprinkler"] = 9999,
