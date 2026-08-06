@@ -138,6 +138,7 @@ getgenv().GAG2Config = {
 
     ["RadiantxCog"] = {
         ["Maple Mushroom"] = 20,
+    
             
     },
         
@@ -146,7 +147,13 @@ getgenv().GAG2Config = {
         ["Fox"] = 2,
         ["Shadow Dragon"] = 1,
         ["Harp"] = 20,
-            
+
+    },
+        
+    ["RivetTest1"] = {
+        ["Maple Bamboo"] = 500,
+        ["Maple Carrot"] = 500,
+    
      },
 },
 
