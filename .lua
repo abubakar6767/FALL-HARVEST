@@ -146,14 +146,20 @@ getgenv().GAG2Config = {
         ["Wolf"] = 2,
         ["Fox"] = 2,
         ["Shadow Dragon"] = 1,
-        ["Harp"] = 20,
+
 
     },
         
     ["RivetTest01"] = {
         ["Maple Bamboo"] = 500,
         ["Maple Carrot"] = 500,
-    
+            
+    },
+
+        
+        ["Unexpectedthe2nd"] = {
+         ["Harp"] = 10,
+
      },
 },
 
