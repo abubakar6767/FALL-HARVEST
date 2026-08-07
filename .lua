@@ -93,6 +93,7 @@ getgenv().GAG2Config = {
         ["Syrup Watering Can"] = 9999,
         ["Syrup Sprinkler"] = 9999,
         ["Harp"] = 9999,
+        ["Trowel"] = 9999,
     },
 
     -- Sell Config
@@ -134,6 +135,7 @@ getgenv().GAG2Config = {
     ["RadiantxCogw"] = {
         ["Super Syrup Watering Can"] = 1,
         ["Super Syrup Sprinkler"] = 1,
+        ["Trowel"] = 100,
     },
 
     ["RadiantxCog"] = {
