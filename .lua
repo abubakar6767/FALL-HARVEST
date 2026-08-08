@@ -28,13 +28,13 @@ getgenv().GAG2Config = {
 
     -- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Maple Carrot"] = 0,
+        ["Maple Carrot"] = 999,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
         ["Maple Tulip"] = 0,
         ["Maple Tomato"] = 0,
         ["Maple Apple"] = 0,
-        ["Maple Bamboo"] = 0,
+        ["Maple Bamboo"] = 10,
         ["Maple Corn"] = 0,
         ["Maple Cactus"] = 0,
         ["Maple Pineapple"] = 0,
@@ -152,19 +152,6 @@ getgenv().GAG2Config = {
         ["Fox"] = 2,
         ["Shadow Dragon"] = 1,
         ["Kitsune"] = 1,
-
-
-    },
-        
-    ["RivetTest01"] = {
-        ["Maple Bamboo"] = 500,
-        ["Maple Carrot"] = 500,
-            
-    },
-
-        
-        ["Unexpectedthe2nd"] = {
-         ["Harp"] = 10,
 
      },
 },
