@@ -11,17 +11,20 @@ getgenv().GAG2Config = {
     BUY_PET = {  -- ["Pet Name"] = Buy Until Amount
         ["ShadowDragon"] = 99,
         ["Fox"] = 99,
-        ["Wolf"] = 99,
         ["Big Fox"] = 999,
+        ["Mega Fox"] = 999,
         ["Big Wolf"] = 999,
+        ["Kitsune"] = 999,
+        ["Big Kitsune"] = 999,
+        ["Mega Kitsune"] = 999,
+        ["Rainbow Kitsune"] = 999,
+        ["Jandel Monkey"] = 999,
 
 
     },
 
-    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
-        {"Swan", 6, 1},
-        {"Turkey", 6, 2},
-    },
+    EQUIP_PET = {},  -- {"Pet Name", Amount to Equip, Priority}
+    
 
     -- Plant Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
@@ -57,7 +60,7 @@ getgenv().GAG2Config = {
         ["Maple Carrot"] = 9999,
         ["Maple Strawberry"] = 0,
         ["Maple Blueberry"] = 0,
-        ["Maple Tulip"] = 0,
+        ["Maple Tulip"] = 9999,
         ["Maple Tomato"] = 0,
         ["Maple Apple"] = 0,
         ["Maple Bamboo"] = 99999,
@@ -73,7 +76,7 @@ getgenv().GAG2Config = {
         ["Maple Dragon Fruit"] = 0,
         ["Maple Acorn"] = 0,
         ["Maple Cherry"] = 0,
-        ["Maple Sunflower"] = 0,
+        ["Maple Sunflower"] = 999,
         ["Atlantic Giant Pumpkin"] = 9999,
         ["Maple Venus Fly Trap"] = 9999,
         ["Maple Pomegranate"] = 9999,
@@ -124,7 +127,7 @@ getgenv().GAG2Config = {
     ["RadiantxCogo"] = {
         ["Atlantic Giant Pumpkin"] = 1,
         ["Maple Venus Fly Trap"] = 1,
-        ["Maple Pomegranate"] = 3,
+        ["Maple Pomegranate"] = 1,
         ["Maple Poison Apple"] = 1,
         ["Maple Venom Spitter"] = 1,
         ["Conifer Cone"] = 1,
@@ -133,13 +136,13 @@ getgenv().GAG2Config = {
     },
         
     ["RadiantxCogw"] = {
-        ["Super Syrup Watering Can"] = 1,
-        ["Super Syrup Sprinkler"] = 1,
+        ["Super Syrup Watering Can"] = 2,
+        ["Super Syrup Sprinkler"] = 2,
         ["Trowel"] = 100,
     },
 
     ["RadiantxCog"] = {
-        ["Maple Mushroom"] = 20,
+        ["Maple Mushroom"] = 40,
     
             
     },
@@ -148,6 +151,7 @@ getgenv().GAG2Config = {
         ["Wolf"] = 2,
         ["Fox"] = 2,
         ["Shadow Dragon"] = 1,
+        ["Kitsune"] = 1,
 
 
     },
