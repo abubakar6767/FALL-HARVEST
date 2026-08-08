@@ -78,9 +78,9 @@ getgenv().GAG2Config = {
         ["Maple Cherry"] = 0,
         ["Maple Sunflower"] = 999,
         ["Atlantic Giant Pumpkin"] = 9999,
-        ["Maple Venus Fly Trap"] = 9999,
-        ["Maple Pomegranate"] = 9999,
-        ["Maple Poison Apple"] = 99999,
+        ["Maple Venus Fly Trap"] = 0,
+        ["Maple Pomegranate"] = 0,
+        ["Maple Poison Apple"] = 0,
         ["Maple Venom Spitter"] = 9999,
         ["Conifer Cone"] = 99999,
         ["Amber Cranberry"] = 9999,
@@ -126,9 +126,6 @@ getgenv().GAG2Config = {
 
     ["RadiantxCogo"] = {
         ["Atlantic Giant Pumpkin"] = 1,
-        ["Maple Venus Fly Trap"] = 1,
-        ["Maple Pomegranate"] = 1,
-        ["Maple Poison Apple"] = 1,
         ["Maple Venom Spitter"] = 1,
         ["Conifer Cone"] = 1,
         ["Amber Cranberry"] = 1,
@@ -148,8 +145,6 @@ getgenv().GAG2Config = {
     },
         
     ["RadiantxCogr"] = {
-        ["Wolf"] = 2,
-        ["Fox"] = 2,
         ["Shadow Dragon"] = 1,
         ["Kitsune"] = 1,
 
